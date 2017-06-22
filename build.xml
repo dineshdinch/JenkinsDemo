@@ -1,5 +1,5 @@
 
-<project name="Jenkins Demo" default = "compile">
+<project name="Jenkins Demo" default = "compile" basedir=".">
 
     <echo message="This is First Ant Build in Jenkins Using Git"/>
 	
