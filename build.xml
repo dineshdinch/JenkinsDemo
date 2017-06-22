@@ -1,4 +1,4 @@
 
 <project>
-    <echo message="This is First Ant Build in Jenkins"/>
+    <echo message="This is First Ant Build in Jenkins Using Git"/>
 </project>
