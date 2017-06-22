@@ -18,4 +18,6 @@
        <java classname="JenkinsDemo" fork="true" />
 	</target>
 	
+	<echo message="Final step of ANT build"/>
+	
 </project>
