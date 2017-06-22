@@ -1,5 +1,5 @@
 
-<project name="Jenkins Demo" default = "compile" basedir=".">
+<project name="Jenkins Demo" default = "run" basedir=".">
 
     <echo message="This is First Ant Build in Jenkins Using Git"/>
 	
@@ -11,7 +11,11 @@
 	</target>
 	
 	<target name = "compile" depends = "init">
-		<javac srcdir = "${src}" destdir = "$build">
+		<javac srcdir = "${src}" destdir = "$build" />
+	</target>
+	
+	<target name="run" depends="compile">
+       <java classname="JenkinsDemo" fork="true" />
 	</target>
 	
 </project>
