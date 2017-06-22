@@ -16,7 +16,7 @@
 	
 	<target name="run" depends="compile">
 		<echo message="Into run" />
-		<java classname="JenkinsDemo" fork="true" />
+		<java classname="JenkinsDemo" classpath="${build}" fork="true" />
 	</target>
 	
 	<echo message="Final step of ANT build" />
